@@ -7,6 +7,9 @@ import play.api.libs.functional.syntax._
 
 
 object Main extends App {
+
+  var NUMBER_OF_DRONES = 5
+
   // initialization
   val props = new Properties()
   props.put("bootstrap.servers", "localhost:9092")
@@ -17,30 +20,42 @@ object Main extends App {
 
 
   // Creating JSON
-  val json: JsValue = Json.parse("""
+  val drone_json: JsValue = Json.parse(s"""
   {
-    "id_drone" : 1,
-    "battery" : 87,
-    "altitude" : 40,
-    "temperature" : 38,
-    "speed": 20,
-    "disk_space": 20,
+    "id_drone" : ${NUMBER_OF_DRONES},
+    "battery" : 0,
+    "altitude" : 0,
+    "temperature" : 0,
+    "speed": 0,
+    "disk_space": 0,
     "location" : {
-      "lat" : 51.235685,
-      "long" : -1.309197
+      "lat" : 0,
+      "long" : 0
     }
   }
   """)
 
+  NUMBER_OF_DRONES += 1
+
+
+
   // Converting JSON to String
-  val jsonString = Json.stringify(json)
+  val drone_string = Json.stringify(drone_json)
+  val id_drone = (drone_json \ "id_drone").get
+  val id_drone_string = Json.stringify(id_drone)
 
   // Sending data
-  val record = new ProducerRecord(TOPIC, "key", jsonString)
+  val record = new ProducerRecord(TOPIC, id_drone_string, drone_string)
   producer.send(record)
+
+
 
   // we need to close the producer to close the connection / avoid memory usage
   producer.close()
   println("End of the program!")
 }
 
+def startDrones(numerOfDrones: Int) = {
+  // finish that function:
+  // create N drones and send their first signals (0 , 0 , 0)
+}
