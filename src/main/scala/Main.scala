@@ -4,15 +4,16 @@ import java.util.Properties
 import play.api.libs.json._
 import play.api.libs.json.Reads._
 import play.api.libs.functional.syntax._
+import java.util.Timer // in order to send regular drones updates
 
 import drone.Drone
 
 
 object Main extends App {
 
-  var NUMBER_OF_DRONES = 5
 
-  // initialization
+
+  // Kafka initialization
   val props = new Properties()
   props.put("bootstrap.servers", "localhost:9092")
   props.put("key.serializer", "org.apache.kafka.common.serialization.StringSerializer")
@@ -20,39 +21,46 @@ object Main extends App {
   val producer = new KafkaProducer[String, String](props)
   val TOPIC="dronesinfos"
 
+  // create 3 drones (just for the simulation)
+  val drone0 = new Drone(0);
+  val drone1 = new Drone(1);
+  val drone2 = new Drone(2);
 
-  val drone = new Drone(106);
+  val drones: List[Drone] = List(drone0, drone1, drone2)
 
-  // Creating JSON
-  val drone_json: JsValue = Json.parse(s"""
-  {
-    "id_drone" : ${drone.id_drone},
-    "battery" : ${drone.battery},
-    "altitude" : ${drone.altitude},
-    "temperature" : ${drone.temperature},
-    "speed": ${drone.speed},
-    "disk_space": ${drone.disk_space},
-    "location" : {
-      "lat" : ${drone.lat},
-      "long" : ${drone.long}
-    }
-  }
-  """)
 
-  NUMBER_OF_DRONES += 1
+  // Simulation of each drone sending values updates to kafka each 3 seconds
+  sendRegularDronesInfos(drones, 3000)
+
+
+
 
   // Sending data
-  val record = new ProducerRecord(TOPIC, drone.id_drone.toString, drone.getJsonString())
-  producer.send(record)
+  //val record = new ProducerRecord(TOPIC, drone.id_drone.toString, drone.getJsonString())
+  //producer.send(record)
 
 
   // we need to close the producer to close the connection / avoid memory usage
-  producer.close()
-  println("End of the program!")
+
+
+
+  def sendRegularDronesInfos(drones: List[Drone], period: Int): Unit =  {
+
+    val t = new java.util.Timer()
+    val task = new java.util.TimerTask {
+      def run() = {
+         drones.foreach { drone =>
+          println(drone)
+          val record = new ProducerRecord(TOPIC, drone.id_drone.toString, drone.getJsonString())
+          producer.send(record)
+          drone.changeInfos() // simulate drone infos updating
+        }
+      }
+    }
+    t.schedule(task, period, period)
+    //task.cancel()
+  }
 
 }
 
-/*def startDrones(numerOfDrones: Int) = {
-  // finish that function:
-  // create N drones and send their first signals (0 , 0 , 0)
-}*/
+

@@ -1,5 +1,7 @@
 [0m[[0m[0minfo[0m] [0m[0mPackaging /home/namileto/Desktop/scala/project_scala/target/scala-2.12/hello-world_2.12-1.0.jar ...[0m
 [0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$$anon$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/namileto/Desktop/scala/project_scala/target/scala-2.12/classes/Main$$anon$1.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Main$delayedInit$body.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/namileto/Desktop/scala/project_scala/target/scala-2.12/classes/Main$delayedInit$body.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	drone[0m
