@@ -1,27 +1,52 @@
 [0m[[0m[0mdebug[0m] [0m[0m[0m
 [0m[[0m[0mdebug[0m] [0m[0mInitial source changes: [0m
-[0m[[0m[0mdebug[0m] [0m[0m	removed:Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0m	added: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0m	removed:Set(/home/namileto/Desktop/scala/project_scala/src/main/scala/drone.scala)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	added: Set(/home/namileto/Desktop/scala/project_scala/src/main/scala/Drone.scala)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	modified: Set(/home/namileto/Desktop/scala/project_scala/src/main/scala/Main.scala)[0m
 [0m[[0m[0mdebug[0m] [0m[0mInvalidated products: Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0mExternal API changes: API Changes: Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0mModified binary dependencies: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0mInitial directly invalidated classes: Set(Main)[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial directly invalidated classes: Set(drone.Drone, Main)[0m
 [0m[[0m[0mdebug[0m] [0m[0m[0m
 [0m[[0m[0mdebug[0m] [0m[0mSources indirectly invalidated by:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	product: Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0m	binary dep: Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0m	external source: Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0mAll sources are invalidated.[0m
-[0m[[0m[0mdebug[0m] [0m[0mRecompiling all 1 sources: invalidated sources (1) exceeded 50.0% of all sources[0m
-[0m[[0m[0minfo[0m] [0m[0mCompiling 1 Scala source to /home/namileto/Desktop/scala/project_scala/target/scala-2.12/classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mRecompiling all 2 sources: invalidated sources (3) exceeded 50.0% of all sources[0m
+[0m[[0m[0minfo[0m] [0m[0mCompiling 2 Scala sources to /home/namileto/Desktop/scala/project_scala/target/scala-2.12/classes ...[0m
 [0m[[0m[0mdebug[0m] [0m[0mGetting org.scala-sbt:compiler-bridge_2.12:1.2.5:compile for Scala 2.12.8[0m
 [0m[[0m[0mdebug[0m] [0m[0mGetting org.scala-sbt:compiler-bridge_2.12:1.2.5:compile for Scala 2.12.8[0m
-[0m[[0m[0mdebug[0m] [0m[0m[zinc] Running cached compiler 548b84f3 for Scala compiler version 2.12.8[0m
+[0m[[0m[0mdebug[0m] [0m[0m[zinc] Running cached compiler 109fd0e5 for Scala compiler version 2.12.8[0m
 [0m[[0m[0mdebug[0m] [0m[0m[zinc] The Scala compiler is invoked with:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	-bootclasspath[0m
 [0m[[0m[0mdebug[0m] [0m[0m	/home/namileto/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.8.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	-classpath[0m
 [0m[[0m[0mdebug[0m] [0m[0m	/home/namileto/Desktop/scala/project_scala/target/scala-2.12/classes:/home/namileto/.ivy2/cache/org.typelevel/cats-core_2.12/jars/cats-core_2.12-1.6.0.jar:/home/namileto/.ivy2/cache/org.typelevel/cats-macros_2.12/jars/cats-macros_2.12-1.6.0.jar:/home/namileto/.ivy2/cache/org.typelevel/machinist_2.12/jars/machinist_2.12-0.6.6.jar:/home/namileto/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.12.8.jar:/home/namileto/.ivy2/cache/org.typelevel/cats-kernel_2.12/jars/cats-kernel_2.12-1.6.0.jar:/home/namileto/.ivy2/cache/org.apache.kafka/kafka-clients/jars/kafka-clients-2.1.0.jar:/home/namileto/.ivy2/cache/com.github.luben/zstd-jni/jars/zstd-jni-1.3.5-4.jar:/home/namileto/.ivy2/cache/org.lz4/lz4-java/jars/lz4-java-1.5.0.jar:/home/namileto/.ivy2/cache/org.xerial.snappy/snappy-java/bundles/snappy-java-1.1.7.2.jar:/home/namileto/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.25.jar:/home/namileto/.ivy2/cache/com.typesafe.play/play-json_2.12/jars/play-json_2.12-2.7.2.jar:/home/namileto/.ivy2/cache/com.typesafe.play/play-functional_2.12/jars/play-functional_2.12-2.7.2.jar:/home/namileto/.ivy2/cache/org.typelevel/macro-compat_2.12/jars/macro-compat_2.12-1.1.1.jar:/home/namileto/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.10.1.jar:/home/namileto/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.9.8.jar:/home/namileto/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.9.8.jar:/home/namileto/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.9.8.jar:/home/namileto/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/bundles/jackson-datatype-jdk8-2.9.8.jar:/home/namileto/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/bundles/jackson-datatype-jsr310-2.9.8.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0mScala compilation took 2.780832957 s[0m
+[0m[[0m[0mdebug[0m] [0m[0mScala compilation took 3.511185611 s[0m
 [0m[[0m[0minfo[0m] [0m[0mDone compiling.[0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidating (transitively) by inheritance from drone.Drone...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: Set(drone.Drone)[0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidated by transitive inheritance dependency: Set(drone.Drone)[0m
+[0m[[0m[0mdebug[0m] [0m[0mThe following modified names cause invalidation of Main: Set(UsedName(lat,[Default]), UsedName(long,[Default]))[0m
+[0m[[0m[0mdebug[0m] [0m[0mChange NamesChange(drone.Drone,ModifiedNames(changes = UsedName(lat,[Default]), UsedName(long,[Default]))) invalidates 2 classes due to The drone.Drone has the following regular definitions changed:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	UsedName(lat,[Default]), UsedName(long,[Default]).[0m
+[0m[[0m[0mdebug[0m] [0m[0m	> by transitive inheritance: Set(drone.Drone)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	> [0m
+[0m[[0m[0mdebug[0m] [0m[0m	> by member reference: Set(Main)[0m
+[0m[[0m[0mdebug[0m] [0m[0m        [0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidating (transitively) by inheritance from Main...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: Set(Main)[0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidated by transitive inheritance dependency: Set(Main)[0m
+[0m[[0m[0mdebug[0m] [0m[0mChange NamesChange(Main,ModifiedNames(changes = UsedName(id_drone,[Default]), UsedName(id_drone_string,[Default]), UsedName(drone_string,[Default]))) invalidates 1 classes due to The Main has the following regular definitions changed:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	UsedName(id_drone,[Default]), UsedName(id_drone_string,[Default]), UsedName(drone_string,[Default]).[0m
+[0m[[0m[0mdebug[0m] [0m[0m	> by transitive inheritance: Set(Main)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	> [0m
+[0m[[0m[0mdebug[0m] [0m[0m	> [0m
+[0m[[0m[0mdebug[0m] [0m[0m        [0m
+[0m[[0m[0mdebug[0m] [0m[0mNew invalidations:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mPreviously invalidated, but (transitively) depend on new invalidations:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mAll newly invalidated classes after taking into account (previously) recompiled classes:Set()[0m
