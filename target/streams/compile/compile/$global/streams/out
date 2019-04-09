@@ -1,7 +1,2 @@
-[0m[[0m[31merror[0m] [0m[0m/home/namileto/Desktop/scala/project_scala/src/main/scala/Main.scala:60:29: illegal start of simple expression[0m
-[0m[[0m[31merror[0m] [0m[0m    t.schedule(task, period=, period)[0m
-[0m[[0m[31merror[0m] [0m[0m                            ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/namileto/Desktop/scala/project_scala/src/main/scala/Main.scala:62:3: ')' expected but '}' found.[0m
-[0m[[0m[31merror[0m] [0m[0m  }[0m
-[0m[[0m[31merror[0m] [0m[0m  ^[0m
-[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
+[0m[[0m[33mwarn[0m] [0m[0mthere was one deprecation warning; re-run with -deprecation for details[0m
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m

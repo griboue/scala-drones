@@ -9,8 +9,7 @@ import java.util.Timer // in order to send regular drones updates
 import drone.Drone
 
 
-object Main extends App {
-
+object Producer extends App {
 
 
   // Kafka initialization
@@ -33,8 +32,6 @@ object Main extends App {
   sendRegularDronesInfos(drones, 3000)
 
 
-
-
   // Sending data
   //val record = new ProducerRecord(TOPIC, drone.id_drone.toString, drone.getJsonString())
   //producer.send(record)
@@ -45,16 +42,17 @@ object Main extends App {
 
 
   def sendRegularDronesInfos(drones: List[Drone], period: Int): Unit =  {
-
     val t = new java.util.Timer()
     val task = new java.util.TimerTask {
       def run() = {
+        println("3 NEW DRONE INFOS SENT !")
          drones.foreach { drone =>
           println(drone)
           val record = new ProducerRecord(TOPIC, drone.id_drone.toString, drone.getJsonString())
           producer.send(record)
           drone.changeInfos() // simulate drone infos updating
         }
+        println("EN OF RUN")
       }
     }
     t.schedule(task, period, period)
