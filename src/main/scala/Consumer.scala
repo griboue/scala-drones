@@ -39,7 +39,7 @@ object Consumer extends App {
         println("fetching new drones data")
          val records=consumer.poll(3)
           for (record<-records.asScala){
-            val fw = new FileWriter("drone_"+i+".JSON", true)
+            val fw = new FileWriter("drone_"+record.key()+".JSON", true)
             try {
               fw.write(record.value()+"\n")
             }

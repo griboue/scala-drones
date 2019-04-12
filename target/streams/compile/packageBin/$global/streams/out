@@ -1,1 +1,23 @@
-[0m[[0m[0mdebug[0m] [0m[0mJar uptodate: /home/namileto/Desktop/scala-drones/target/scala-2.12/hello-world_2.12-1.0.jar[0m
+[0m[[0m[0minfo[0m] [0m[0mPackaging /home/namileto/Desktop/scala-drones/target/scala-2.12/hello-world_2.12-1.0.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Consumer$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/namileto/Desktop/scala-drones/target/scala-2.12/classes/Consumer$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Consumer.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/namileto/Desktop/scala-drones/target/scala-2.12/classes/Consumer.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Consumer$delayedInit$body.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/namileto/Desktop/scala-drones/target/scala-2.12/classes/Consumer$delayedInit$body.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Consumer$$anon$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/namileto/Desktop/scala-drones/target/scala-2.12/classes/Consumer$$anon$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Producer$$anon$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/namileto/Desktop/scala-drones/target/scala-2.12/classes/Producer$$anon$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	drone[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/namileto/Desktop/scala-drones/target/scala-2.12/classes/drone[0m
+[0m[[0m[0mdebug[0m] [0m[0m	drone/Drone.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/namileto/Desktop/scala-drones/target/scala-2.12/classes/drone/Drone.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Producer$delayedInit$body.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/namileto/Desktop/scala-drones/target/scala-2.12/classes/Producer$delayedInit$body.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Producer$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/namileto/Desktop/scala-drones/target/scala-2.12/classes/Producer$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Producer.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/namileto/Desktop/scala-drones/target/scala-2.12/classes/Producer.class[0m
+[0m[[0m[0minfo[0m] [0m[0mDone packaging.[0m
